@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36202.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EJ1", "EJ1\EJ1.csproj", "{B5E061DF-2E08-43EF-A26B-1A08BFF1E5B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EJ2", "EJ2\EJ2.csproj", "{0EBEF5A1-8D90-4634-8471-67C90EB0BF28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5E061DF-2E08-43EF-A26B-1A08BFF1E5B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5E061DF-2E08-43EF-A26B-1A08BFF1E5B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5E061DF-2E08-43EF-A26B-1A08BFF1E5B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5E061DF-2E08-43EF-A26B-1A08BFF1E5B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EBEF5A1-8D90-4634-8471-67C90EB0BF28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EBEF5A1-8D90-4634-8471-67C90EB0BF28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EBEF5A1-8D90-4634-8471-67C90EB0BF28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EBEF5A1-8D90-4634-8471-67C90EB0BF28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F131D42D-9938-49D3-B111-BEEF837A9F64}
+	EndGlobalSection
+EndGlobal

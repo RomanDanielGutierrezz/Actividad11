@@ -1,4 +1,4 @@
-namespace Ejemplo1
+namespace EJ2
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace Ejemplo1
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FormPrincipal());
+            Application.Run(new Promedios());
         }
     }
 }
