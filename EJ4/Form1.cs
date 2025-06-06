@@ -1,9 +1,10 @@
+using EJ4.Models;
+
 namespace EJ4
 {
     public partial class Form1 : Form
     {
-        int contador = 0;
-        double[] valores = new double[100];
+        Servicio servicio = new Servicio();
         public Form1()
         {
             InitializeComponent();
@@ -15,18 +16,13 @@ namespace EJ4
         }
         private void btoRegistrar_Click(object sender, EventArgs e)
         {
-            valores[contador] = Convert.ToDouble(txtRegistro.Text);
-            contador++;
+            servicio.valores[servicio.contador] = Convert.ToDouble(txtRegistro.Text);
+            servicio.contador++;
             txtRegistro.Clear();
         }
         private void btoResult_Click(object sender, EventArgs e)
         {
-            double acumulador = 0;
-            for (int i = 0; i < contador; i++)
-            {
-                acumulador += valores[i];
-            }
-            double promedio = acumulador / contador;
+            double promedio = servicio.Promedio();
             lbPromedio.Text = $"El promedio es: {promedio:f2}";
             txtValores.Text = $@"El promedio es: 
                               {promedio,6:f2}";
@@ -35,22 +31,11 @@ namespace EJ4
         private void btoOrdenar_Click(object sender, EventArgs e)
         {
             txtValores.Clear();
-            for (int i = 0; i < contador; i++)
+            for (int i = 0; i < servicio.contador; i++)
             {
-                txtValores.Text += $"{valores[i],5:f2}";
+                txtValores.Text += $"{servicio.valores[i],5:f2}";
             }
-            for (int i = 0; i < contador-1; i++)
-            {
-                for (int j = i+1; j < contador; j++)
-                {
-                    if (valores[i] > valores[j])
-                    {   
-                        double aux = valores[i];
-                        valores[i] = valores[j];
-                        valores[j] = aux;
-                    }
-                }
-            }
+            
         }
     }
 }
